@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
 
+console.log(process.env);
+
 var port = process.env.PORT || 3000;
 
 var server = app.listen(port, function() {
